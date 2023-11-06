@@ -14,7 +14,7 @@ export const BlockRenderer = ({blocks}) => {
                 textAlign={block.attributes.align}
                 content={block.attributes.content}
                 textColor={theme[block.attributes.textColor] ||
-                block.attributes.style?.text?.color}
+                block.attributes.style?.color?.text}
                 ></Paragraph>
             }
             case 'core/heading': {

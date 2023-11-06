@@ -27,7 +27,7 @@ export const getStaticProps = async (context) => {
             uri
         }
       })
-      
+      console.log({data})
       return {
         props: {
           title: data.nodeByUri.title,
